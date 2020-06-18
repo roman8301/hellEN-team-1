@@ -1,0 +1,28 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	&__wrapper{
+		width: 78px;
+		color: $bg-black;
+	}
+	&__name {
+		font-weight: 800;
+		font-size: 15px;
+	}
+	&__img {
+		display: inline;
+	}
+	&__description {
+		font-weight: 700;
+		font-size: 5px;
+		letter-spacing: 1px;
+		margin-top: 4px;
+		&--color {
+			color: $orange;
+		}
+	}
+}
