@@ -1,7 +1,66 @@
-.title {
-    font-family: $main-font;
+.section__main-problems {
+   height: 520px;
+   background: url(./../../images/bg_.png) 100% 100% no-repeat;
+   background-size: cover;
 }
-
+.title {
+    width: 233px;
+    font-family: $main-font;
+    padding-top: 51px;
+    padding-bottom: 19px;
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+}
 .title_colour {
     color: #ff6b08;
 }
+.section__main-problems--list {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    counter-reset: item;
+    box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+}
+.section__main-problems--item {
+    font-family: $main-font;
+    color: #18191d;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 20px;
+    position: relative;
+    padding-top: 15px;
+    margin-left: 28px;
+    width: 200px;
+}
+.section__main-problems--text {
+    margin: 0;
+}
+.section__main-problems--item::after {
+    display: inline-block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: #ff6b08;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.section__main-problems--item::before {    
+    counter-increment: item;
+    content: counter(item, decimal-leading-zero) ' ' ;
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: inline-block;
+    color: #ff6b08;
+    margin-bottom: 12px;
+    margin-left: 40px;
+    }
