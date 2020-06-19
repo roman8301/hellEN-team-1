@@ -2,28 +2,3 @@
 	display: flex;
 	justify-content: space-between;
 }
-
-.logo {
-	display: flex;
-	&__wrapper{
-		width: 4.875rem;
-		color: $bg-black;
-	}
-	&__name {
-		font-weight: 800;
-		font-size: 0.9375rem;
-	}
-	&__img {
-		display: inline;
-		position: relative;
-		top: 0.1875rem;
-	}
-	&__description {
-		font-weight: 700;
-		font-size: 0.3125rem;
-		letter-spacing: 0.0437rem;
-		&--color {
-			color: $orange;
-		}
-	}
-}
