@@ -6,22 +6,22 @@
 .logo {
 	display: flex;
 	&__wrapper{
-		width: 78px;
+		width: 4.875rem;
 		color: $bg-black;
 	}
 	&__name {
 		font-weight: 800;
-		font-size: 15px;
+		font-size: 0.9375rem;
 	}
 	&__img {
 		display: inline;
 		position: relative;
-		top: 3px;
+		top: 0.1875rem;
 	}
 	&__description {
 		font-weight: 700;
-		font-size: 5px;
-		letter-spacing: 0.7px;
+		font-size: 0.3125rem;
+		letter-spacing: 0.0437rem;
 		&--color {
 			color: $orange;
 		}
