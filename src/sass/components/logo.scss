@@ -1,7 +1,7 @@
 .logo {
 	display: flex;
 	&__wrapper{
-		width: 4.875rem;
+		width: 78px;
 		color: $bg-black;
 	}
 	&__name {
@@ -11,7 +11,7 @@
 	&__img {
 		display: inline;
 		position: relative;
-		top: 0.1875rem;
+		top: 3px;
 	}
 	&__description {
 		font-weight: 700;
