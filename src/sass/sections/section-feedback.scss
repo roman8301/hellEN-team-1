@@ -1,0 +1,37 @@
+.feedback {
+    position: relative;
+
+
+    &__group-photo {
+        position: absolute;
+        z-index: 1;    
+    }
+}
+
+.feedback-content {
+    position: absolute;
+    z-index: 2;      
+
+
+    &__title {    
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 800;
+        color: #000000;
+    }
+
+    &__description {
+        font-family: 'Montserrat';
+        font-size: 11px;
+        font-weight: 600;
+        color: #000000;
+    }
+}
+
+.text-effect {
+    color: #ff6b08;
+}
+
+
+
+
