@@ -6,3 +6,44 @@
   display: flex;
   flex-direction: column;
 }
+.hero__title {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  line-height: 29px;
+  color: $last-black;
+  font-family: $main-font;
+  font-weight: 800;
+  margin-bottom: 34px;
+}
+.hero__title--second-line {
+  display: block;
+}
+.hero__text {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: $last-gray;
+  font-family: $main-font;
+  font-weight: 500;
+}
+.hero__text--second-line {
+  display: block;
+  color: $last-black;
+  font-weight: 700;
+}
+.hero__text--third-line {
+  color: $orange;
+  font-weight: 700;
+}
+.hero__link {
+  font-size: 0.6875rem;
+  letter-spacing: 1px;
+  background-color: $orange;
+  color: $white;
+  font-family: $button-font;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid $orange;
+  box-sizing: border-box;
+  padding: 16px;
+}
