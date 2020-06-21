@@ -90,6 +90,21 @@
 
       &__item-photo {
         border-radius: 50%;
+        border: solid 2px rgba(255, 107, 8, 0);
+      }
+
+      &__item-link {
+        &:hover {
+          .slider-photos-list__item-photo {
+            border-color: $orange;
+          }
+        }
+
+        &:active {
+          .slider-photos-list__item-photo {
+            border: solid 2px $orange;
+          }
+        }
       }
     }
 
@@ -117,4 +132,3 @@
     }
   }
 }
-
