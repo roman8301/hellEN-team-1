@@ -15,6 +15,11 @@
 	}
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (min-width: 1680px) {
 	.container {
 		max-width: 1340px;

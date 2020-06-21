@@ -1,3 +1,120 @@
-h2.title {
-  font-size: 50px;
+.slider {
+  padding-top: 52px;
+  padding-bottom: 54px;
+
+  .slider-title {
+    font-size: 1.25rem;
+    line-height: 1.62rem;
+    letter-spacing: 0.05rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 46px;
+  }
+
+  .slider-comment {
+    box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+    padding: 22px 28px 34px 28px;
+    &__photo-wrapper {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+
+      &::after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        background: url("../images/logo-icon/slider-icons/icon-vk.svg") no-repeat center;
+        width: 25px;
+        height: 14px;
+        margin-top: 20px;
+      }
+    }
+
+    &__photo-graduate {
+      border-radius: 50%;
+    }
+
+    &__subtitle {
+      font-size: 0.875rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.05rem;
+      font-weight: 800;
+      text-align: center;
+      text-transform: capitalize;
+      color: $orange;
+      margin-top: 54px;
+    }
+
+    &__description-graduate,
+    &__comment-graduate {
+      font-size: 0.75rem;
+      letter-spacing: 0.05rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    &__description-graduate {
+      line-height: 1rem;
+      color: $main-gray;
+    }
+
+    &__comment-graduate {
+      line-height: 1.25rem;
+      color: $last-black;
+      margin-top: 20px;
+
+      &--link {
+        color: $orange;
+        border-bottom: solid 2px #ffd8c9;
+      }
+    }
+  }
+
+  .slider-photos-wrapper {
+    margin-top: 16px;
+    position: relative;
+
+    .slider-photos-list {
+      justify-content: center;
+      &__item {
+        width: 54px;
+        height: 54px;
+
+        &:not(:first-child) {
+          margin-left: 10px;
+        }
+        &--visibility {
+          display: none;
+        }
+      }
+
+      &__item-photo {
+        border-radius: 50%;
+      }
+    }
+
+    .slider-buttons {
+      justify-content: space-between;
+      width: 280px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      &__prev,
+      &__next {
+        width: 20px;
+        height: 12px;
+        border: none;
+      }
+
+      &__prev {
+        background: url("../images/logo-icon/slider-icons/prev.svg") no-repeat center;
+      }
+
+      &__next {
+        background: url("../images/logo-icon/slider-icons/next.svg") no-repeat center;
+      }
+    }
+  }
 }
+
