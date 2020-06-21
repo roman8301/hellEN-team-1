@@ -1,4 +1,113 @@
-.nav {
-	display: flex;
-	justify-content: space-between;
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #77fafa;
+		z-index: 2;
+	}
+
+	&__body {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 92px;
+	}
+
+	&__logo {
+		position: relative;
+		z-index: 3;
+	}
+
+	&__burger {
+		display: none;
+	}
+
+	&__menu {
+
+	}
+
+	&__list {
+		display: flex;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__item {
+		&:not(:last-child) {
+      margin-right: 62px;
+    }
+	}
+
+	&__link {
+		font-family: $button-font;
+		font-size: 0.875rem;
+		letter-spacing: 0.035rem;
+		color: $last-gray;
+	}
+}
+
+.button-modal {
+	background-color: none;
+	border: 2px solid $orange;
+	position: relative;
+	z-index: 3;
+}
+
+@media (max-width: 1023px) {
+	.header {
+		&__burger {
+			display: block;
+			position: relative;
+			width: 24px;
+			height: 12px;
+			right: 0;
+			z-index: 3;
+
+			& span {
+				position: absolute;
+				background-color: $last-black;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				top: 5px;
+			}
+
+			&::before, &::after {
+				content: '';
+				background-color: $last-black;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+			}
+
+			&::before {
+				top: 0;
+			}
+
+			&::after {
+				bottom: 0;
+			}
+		}
+
+		&__menu {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.86);
+		}
+	}
 }

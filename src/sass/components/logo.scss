@@ -1,22 +1,28 @@
 .logo {
 	display: flex;
 	&__wrapper{
-		width: 78px;
+		width: 80px;
 		color: $bg-black;
 	}
 	&__name {
 		font-weight: 800;
 		font-size: 0.9375rem;
+		letter-spacing: 0.22px;
 	}
 	&__img {
 		display: inline;
 		position: relative;
 		top: 3px;
+		// &--prop {
+		// 	width: 15px;
+		// 	height: 22px;
+		// 	fill: $orange;
+		// }
 	}
 	&__description {
 		font-weight: 700;
 		font-size: 0.3125rem;
-		letter-spacing: 0.0437rem;
+		letter-spacing: 0.75px;
 		&--color {
 			color: $orange;
 		}
