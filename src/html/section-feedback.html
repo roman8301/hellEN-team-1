@@ -1,6 +1,17 @@
-<section class="feedback container">
-    <img  srcset="./images/feedback-images/group.png 320w ./images/feedback-images/group@2x.png 640w" src="./images/feedback-images/group.png" alt="group people" sizes="320px" height="538" class="feedback__photo">
-    <div class="feedback-content">            
+<section class="feedback">
+    <picture class="feedback__picture">
+        <source media="(max-width: 767px)" srcset="
+            ./images/feedback-images/teacher-min.png ,
+            ./images/feedback-images/teacher@2x-min.png 2x">
+        <source media="(min-width: 768px) and (max-width: 1279px)" srcset="
+            ./images/feedback-images/teacher-min.png  ,
+            ./images/feedback-images/teacher@2x-min.png 2x">
+        <source media="(min-width: 1280px)" srcset="
+            ./images/feedback-images/teacher-min.png  ,
+            ./images/feedback-images/teacher@2x-min.png 2x">
+        <img src="./images/feedback-images/mob-group.png" alt="people">
+    </picture>    
+    <div class="feedback-content container">            
         <h3 class="feedback-content__title">Регистрация на <span class="text-effect">бесплатную</span> телефонную <span class="text-effect">консультацию</span> по нюансам ЗНО<span class="line-text">
             по английскому язику</span></h3>
         <p class="feedback-content__description">Оставь заявку на участие в <span class="text-effect">бесплатном занятии.</span> С вами свяжется консультант и ответит на вопросы.</p>
