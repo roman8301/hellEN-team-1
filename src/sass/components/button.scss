@@ -7,16 +7,23 @@
 	font-weight: 700;
 	letter-spacing: 1.1px;
 	color: $white;
-	padding: 14px 18px;
+	padding: 20px 0 20px;
 }
 
 @media (min-width: 1280px) {
 	.button {
 		width: 300px;
 		font-size: 12px;
-		letter-spacing: 1.1px;
-		padding: 20px 28px;
+		letter-spacing: 2.5px;
+		padding: 28px 0 28px;
 	}
 }
 
-@media (min-width: 1680px) {}
+@media (min-width: 1680px) {
+	.button {
+		width: 350px;
+		font-size: 14px;
+		letter-spacing: 2.5px;
+		padding: 28px 0 28px;
+	}
+}
