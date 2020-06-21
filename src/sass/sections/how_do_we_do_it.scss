@@ -1,0 +1,90 @@
+.how-do {
+  padding-top: 25px;
+  &__title-section {
+    margin: 0 auto;
+    color: #000000;
+  }
+  &__list {
+    margin: 0 auto;
+  }
+  &__title {
+    padding: 0 30px 0 30px;
+    display: block;
+    position: relative;
+    font-size: 0.8125rem;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #111517;
+    font-family: $main-font;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 18px;
+    &::after {
+      display: inline-block;
+      content: '';
+      width: 25px;
+      height: 2px;
+      background-color: #ff6b08;
+      position: absolute;
+      bottom: 0;
+      left: 132.5px;
+    }
+  }
+  &__text {
+    font-size: 0.6875rem;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #858585;
+    font-family: $main-font;
+    font-weight: 400;
+    padding: 0 19px 0 19px;
+  }
+  &__item {
+    min-height: 267px;
+    width: 280px;
+    text-align: center;
+    margin-bottom: 16px;
+    box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+  
+    &--wrapper {
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+    &--icon {
+      margin: 0 auto;
+      fill: #ff6b08;
+      display: block;
+      height: 45px;
+      width: 42px;
+    }
+    &:hover {
+      background-color: #ff6b08;
+    }
+    &:hover .how-do__item--icon {
+      fill: #fff;
+    }
+    &:hover .how-do__title {
+      color: #fff;
+    }
+    &:hover .how-do__title::after {
+      background-color: #fff;
+    }
+    &:hover .how-do__text {
+      color: #fff;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .how-do__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .how-do__item {
+    width: 290px;
+  }
+  .how-do__item:nth-child(2n+1) {
+    margin-right: 20px;
+  }
+}
+
