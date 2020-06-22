@@ -9,6 +9,12 @@
     font-weight: 800;
     text-align: center;
     margin-bottom: 46px;
+
+    @media (min-width: 768px) {
+      &--mobile-word {
+        display: none;
+      }
+    }
   }
 
   .slider-comment {
@@ -34,6 +40,10 @@
       border-radius: 50%;
     }
 
+    &__text-wrapper {
+      margin-top: 54px;
+    }
+
     &__subtitle {
       font-size: 0.875rem;
       line-height: 1.75rem;
@@ -42,7 +52,6 @@
       text-align: center;
       text-transform: capitalize;
       color: $orange;
-      margin-top: 54px;
     }
 
     &__description-graduate,
@@ -66,6 +75,18 @@
       &--link {
         color: $orange;
         border-bottom: solid 2px #ffd8c9;
+      }
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      padding: 42px 64px 48px 36px;
+
+      &__subtitle {
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+        text-align: left;
+        margin-top: 54px;
       }
     }
   }
