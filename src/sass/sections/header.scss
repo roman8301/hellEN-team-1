@@ -34,7 +34,7 @@
 	}
 
 	&__menu {
-
+		display: flex;
 	}
 
 	&__list {
@@ -58,13 +58,22 @@
 }
 
 .button-modal {
-	background-color: none;
+	display: inline-block;
+	width: 250px;
+	font-family: $button-font;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 1.1px;
+	color: $orange;
+	padding: 20px 0 20px;
+	background-color: transparent;
 	border: 2px solid $orange;
 	position: relative;
+	cursor: pointer;
 	z-index: 3;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
 	.header {
 		&__burger {
 			display: block;
