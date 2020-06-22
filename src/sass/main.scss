@@ -8,7 +8,12 @@
 @import 'base.scss';
 @import './components/container.scss';
 
+@import './sections/header.scss';
 @import './sections/slider.scss';
 
-@import './sections/header.scss';
 @import './components/upper.scss';
+
+@import './components/logo.scss';
+@import './components/centering.scss';
+@import './components/button.scss';
+
