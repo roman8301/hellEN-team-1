@@ -1,10 +1,9 @@
 .teacher {
   padding-top: 240px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 
   &__header {
-    margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-family: $main-font;
     font-size: 20px;
     letter-spacing: 1px;
@@ -41,12 +40,13 @@
 
     &::after {
       position: relative;
-      right: 20px;
+      left: 25px;
       display: block;
       content: '';
       width: 25px;
       height: 2px;
       background-color: $orange;
+      margin-bottom: 15px;
     }
   }
 
@@ -56,15 +56,15 @@
     color: $main-black;
     font-family: $main-font;
     font-weight: 600;
-    margin-left: 40px;
+    padding-left: 40px;
     margin-bottom: 20px;
-    background-image: url(../images/logo-icon/fire.png);
+    background-image: url(../images/icons/teacher/check.svg);
     background-repeat: no-repeat;
     background-position: 0px 0px;
   }
 
   &__text {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     font-size: 11px;
     letter-spacing: 1px;
     line-height: 20px;
@@ -81,5 +81,116 @@
     color: $orange;
     font-family: $main-font;
     font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) {
+  .teacher {
+    &__wraper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__header {
+      font-size: 26px;
+    }
+
+    &__picture {
+      min-width: 247px;
+    }
+
+    &__description {
+      max-width: 400px;
+    }
+
+    &__name {
+      font-size: 20px;
+      line-height: 18px;
+      &::after {
+        margin-top: 15px;
+        width: 396px;
+      }
+    }
+
+    &__list {
+      line-height: 20px;
+      &::after {
+        left: 0px;
+        width: 25px;
+        height: 2px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .teacher {
+    padding-top: 90px;
+    padding-bottom: 70px;
+
+    &__description {
+      min-width: 605px;
+    }
+
+    &__header {
+      font-size: 42px;
+      letter-spacing: 2px;
+      margin-bottom: 50px;
+    }
+
+    &__name {
+      font-size: 29px;
+      &::after {
+        margin-top: 15px;
+        width: 602px;
+      }
+    }
+
+    &__item {
+      font-size: 17px;
+      letter-spacing: 1px;
+      line-height: 26px;
+      background-size: 4%;
+    }
+
+    &__text {
+      font-size: 17px;
+      letter-spacing: 1px;
+      line-height: 26px;
+    }
+
+    &__list {
+      line-height: 28px;
+      &::after {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__link {
+      font-size: 17px;
+      letter-spacing: 1px;
+      line-height: 29px;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .teacher {
+    padding-top: 315px;
+    padding-bottom: 125px;
+
+    &__header {
+      font-size: 46px;
+    }
+    &__description {
+      min-width: 660px;
+    }
+
+    &__name {
+      &::after {
+        width: 656px;
+      }
+    }
   }
 }
