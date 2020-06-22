@@ -66,6 +66,7 @@
 }
 .virtues {
   position: absolute;
+  counter-reset: virtues-counter;
   &__title {
     font-family: $main-font;
     color: $white;
@@ -100,6 +101,10 @@
     padding-left: 35px;
     width: 100%;
     margin: 0;
+    &::after {
+      content: '0' counter(virtues-counter);
+      counter-increment: virtues-counter;
+    }
     &::before {
       content: '';
       display: inline-block;
