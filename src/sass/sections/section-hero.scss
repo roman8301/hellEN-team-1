@@ -40,22 +40,10 @@
   }
   &__link {
     display: block;
-    // width: 250px;
-    // height: 48px;
-    // font-size: 0.6875rem;
-    // letter-spacing: 1px;
-    // background-color: $orange;
-    // color: $white;
-    // font-family: $button-font;
-    // font-weight: bold;
-    // text-align: center;
-    // padding-top: 16px;
-    // border: 2px solid $orange;
-    // box-sizing: border-box;
     margin: 0 15px 34px 15px;
     &:hover {
-      background-color: #d35526;
-      border: 2px solid #d35526;
+      background-color: $hover-button;
+      border: 2px solid $hover-button;
     }
   }
   &__benefits-list {
