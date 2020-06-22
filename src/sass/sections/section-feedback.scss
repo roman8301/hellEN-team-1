@@ -93,15 +93,16 @@
     color: $orange;
 }
 
-.line-text {
-    display: block;
-}
 
-@media (max-width: 767px){
+/*.line-text {
+    display: block;
+}*/
+
+/*@media (max-width: 767px) {
     .line-text {
         display: block;
-    }
-}
+    }*/
+
 
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -147,11 +148,15 @@
         }
           
     }
-
-    .tab-line-text {
-        display: block;
+    .line-effect {
+        display: none;
     }
+
   
+}
+
+.des-line-effect{
+    display: block;
 }
 
 @media (min-width: 1280px) and (max-width: 1679px) {
@@ -178,7 +183,6 @@
         &__description {
             font-size: 1.125rem;
             line-height: 1.5313rem;
-            color: $white;
             margin-bottom: 53px;
         }
     }
@@ -200,6 +204,8 @@
 
 }
 
+
+
 @media (min-width: 1680px) {
     .background-wrapper {
         background-image:url(../images/feedback-images/mega-group-min.png); 
@@ -209,5 +215,18 @@
         .background-wrapper {
           background-image: url(../images/feedback-images/mega-group@2x-min.png);
         }
+    }
+
+    .feedback-content {
+        padding: 126px 0 100px 0;
+    }
+
+    &__title{
+        margin-bottom: 64px;
+    }
+
+    &__description {
+        font-size: 1.5625rem;
+        line-height: 2.3438rem;
     }
 }
