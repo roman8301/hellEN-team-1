@@ -2,6 +2,11 @@
   padding-top: 52px;
   padding-bottom: 54px;
 
+  @media (min-width: 768px) {
+    padding-bottom: 74px;
+    position: relative;
+  }
+
   .slider-title {
     font-size: 1.25rem;
     line-height: 1.62rem;
@@ -11,15 +16,26 @@
     margin-bottom: 46px;
 
     @media (min-width: 768px) {
+      font-size: 1.625rem;
+      line-height: 3.875rem;
+      margin-bottom: 20px;
+
       &--mobile-word {
         display: none;
       }
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 2.625rem;
+      line-height: 3.875rem;
+      margin-bottom: 20px;
     }
   }
 
   .slider-comment {
     box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
     padding: 22px 28px 34px 28px;
+
     &__photo-wrapper {
       width: 80px;
       height: 80px;
@@ -82,11 +98,25 @@
       display: flex;
       padding: 42px 64px 48px 36px;
 
+      &__photo-wrapper {
+        padding-top: 18px;
+      }
+
+      &__text-wrapper {
+        margin-top: 0;
+        flex-basis: 70%;
+      }
+
       &__subtitle {
         font-size: 1.125rem;
         line-height: 1.875rem;
+        margin-bottom: 20px;
+      }
+
+      &__subtitle,
+      &__description-graduate,
+      &__comment-graduate {
         text-align: left;
-        margin-top: 54px;
       }
     }
   }
@@ -95,8 +125,13 @@
     margin-top: 16px;
     position: relative;
 
+    @media (min-width: 768px) {
+      position: static;
+    }
+
     .slider-photos-list {
       justify-content: center;
+
       &__item {
         width: 54px;
         height: 54px;
@@ -104,8 +139,13 @@
         &:not(:first-child) {
           margin-left: 10px;
         }
+
         &--visibility {
           display: none;
+
+          @media (min-width: 768px) {
+            display: block;
+          }
         }
       }
 
@@ -134,7 +174,18 @@
       width: 280px;
       position: absolute;
       top: 50%;
-      transform: translate(0, -50%);
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @media (min-width: 768px) {
+        width: 724px;
+
+        &__prev,
+        &__next {
+          width: 25px;
+          height: 14px;
+        }
+      }
 
       &__prev,
       &__next {
