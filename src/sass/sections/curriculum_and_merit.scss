@@ -302,10 +302,10 @@
   }
 }
 @media (min-width: 1680px) {
-  .background-wrapper{
-   position: relative;
-   background-size: 700px 485px;
-   background-position: left bottom 100px;
+  .background-wrapper {
+    position: relative;
+    background-size: 700px 485px;
+    background-position: left bottom 100px;
     &::before {
       width: 100vw;
       height: 4px;
@@ -326,10 +326,12 @@
     &__item-title {
       font-size: 1.3125rem;
       line-height: 1.8125rem;
-      &::before{top: -36px;
-       width: 20px;
+      &::before {
+        top: -36px;
+        width: 20px;
         height: 20px;
-        border-radius: 20px;}
+        border-radius: 20px;
+      }
     }
     &__item-subtitle {
       font-size: 1.3125rem;
@@ -347,7 +349,7 @@
       line-height: 3.125rem;
       margin-bottom: 50px;
     }
-    &__list{
+    &__list {
       padding-top: 65px;
     }
     &__item {
