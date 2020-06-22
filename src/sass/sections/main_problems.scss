@@ -65,19 +65,56 @@
     // background-position: right bottom;
     // background-repeat: no-repeat;
     // background-size: cover;
+    &__item {
+      width: 250px;
+      font-size: 1.125rem;
+      line-height: 25px;
+    }
+    &__title {
+      width: 460px;
+      font-size: 1.625rem;
+      line-height: 33px;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
   }
-  .main-problems__item {
-    width: 250px;
-  }
-  .main-problems__title {
-    width: 460px;
-    font-size: 1.625rem;
-    line-height: 33px;
-  }
+}
+@media (min-width: 1280px) {
+  .main-problems {
+    padding-top: 70px;
+    margin-bottom: 50px;
+    &__title {
+      font-size: 2.625rem;
+      letter-spacing: 2px;
+      line-height: 57px;
+      width: 740px;
+      padding-bottom: 50px;
+    }
+    &__list {
+      padding: 35px 100px 0px 100px;
+      justify-content: space-between;
+    }
+    &__item {
+      width: 270px;
+      margin-left: 0px;
+      font-size: 1.125rem;
+      letter-spacing: 1px;
+      line-height: 29px;
 
-  .main-problems__list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+      &:nth-child(-n + 3) {
+        padding-bottom: 28px;
+      }
+      &:nth-child(n + 4) {
+        padding-bottom: 50px;
+      }
+      &::before {
+        font-size: 1.3125rem;
+        letter-spacing: 1px;
+        line-height: 29px;
+      }
+    }
   }
 }
