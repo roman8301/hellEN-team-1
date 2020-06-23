@@ -3,9 +3,23 @@
  */
 
 @import 'normalize.scss';
+@import 'base.scss';
+
 @import './helpers/fonts.scss';
 @import './helpers/variables.scss';
-@import 'base.scss';
+
 @import './components/container.scss';
+@import './components/upper.scss';
+@import './components/logo.scss';
+@import './components/centering.scss';
+@import './components/button.scss';
+
 @import './sections/header.scss';
+@import './sections/section-hero.scss';
+@import './sections/main_problems';
+@import './sections/how_do_we_do_it.scss';
+@import './sections/curriculum_and_merit.scss';
+@import './sections/teacher.scss';
+@import './sections/guaranty.scss';
+@import './sections/slider.scss';
 @import './sections/section-feedback.scss';
