@@ -1,4 +1,4 @@
-.background-wrapper {
+.background-wrapper-curriculum {
   background-color: $main-black;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/curriculum/background_image_curriculum.jpg);
@@ -7,13 +7,16 @@
   background-position: calc(50% + 150px) 87%;
 }
 @media (min-resolution: 192dpi) {
-  .background-wrapper {
+  .background-wrapper-curriculum {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../images/curriculum/background_image_curriculum@2x.jpg);
   }
 }
 .curriculum {
   &__title {
+    font-family: $main-font;
+    font-size: 1.25rem;
+    font-weight: 800;
     color: $white;
   }
   &__list-semesters {
@@ -54,7 +57,7 @@
     position: relative;
     &:hover .curriculum__item-title {
       &:before {
-        box-shadow: 0 0 29px 4px rgba($color: $main-black, $alpha: 0.35);
+        box-shadow: 0 0 29px 4px rgba($color: $white, $alpha: 0.35);
       }
     }
   }
@@ -188,7 +191,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
-  .background-wrapper {
+  .background-wrapper-curriculum {
     background-size: 455px 290px;
     background-position: calc(100% + 45px) 86%;
   }
@@ -246,7 +249,7 @@
   }
 }
 @media (min-width: 1280px) {
-  .background-wrapper {
+  .background-wrapper-curriculum {
     position: relative;
     background-size: 547px 407px;
     background-position: left -20px bottom 205px;
@@ -341,7 +344,7 @@
   }
 }
 @media (min-width: 1680px) {
-  .background-wrapper {
+  .background-wrapper-curriculum {
     position: relative;
     background-size: 700px 485px;
     background-position: left bottom 80px;
