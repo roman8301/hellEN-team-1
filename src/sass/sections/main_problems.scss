@@ -57,14 +57,29 @@
     }
   }
 }
+.Layer_1 {
+  background-image: url("Layer 1.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 356px;
+  height: 534px;
+  z-index: 1;
+}
+.fire {
+  background-image: url("fire.png");
+  position: absolute;
+  left: 558px;
+  top: 724px;
+  width: 210px;
+  height: 313px;
+  z-index: 82;
+}
+
 
 @media (min-width: 768px) {
   .main-problems {
-    background-image: linear-gradient(#111517 68%, transparent 32%);
-    // background-image: url(../images/fire.png);
-    // background-position: right bottom;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    background: url('../images/fire768.png') right bottom 80% no-repeat, linear-gradient(to bottom, #111517 68%, transparent 32%);
     &__item {
       width: 250px;
       font-size: 1.125rem;
@@ -84,6 +99,7 @@
 }
 @media (min-width: 1280px) {
   .main-problems {
+    background: url('../images/fire1280.png') right bottom 65% no-repeat, linear-gradient(to bottom, #111517 87%, transparent 13%);
     padding-top: 70px;
     margin-bottom: 50px;
     &__title {
@@ -118,3 +134,4 @@
     }
   }
 }
+
