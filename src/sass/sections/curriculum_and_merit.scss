@@ -84,7 +84,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 14px 25px 25px 28px;
-    box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+    box-shadow: 4px 6.928px 15.54px 5.46px rgba($color: $last-black, $alpha: 0.04);
     background-color: $white;
   }
   &__item {
