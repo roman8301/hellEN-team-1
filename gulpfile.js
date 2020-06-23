@@ -21,13 +21,8 @@ const serve = () => {
 };
 
 const watcher = done => {
-  watch(paths.watch.html).on(
-    'change',
-    series(tasks.html, tasks.inject, browserSync.reload),
-  );
-  watch(paths.watch.css).on('change', function () {
-    setTimeout(series(tasks.css, browserSync.reload), 300);
-  });
+  watch(paths.watch.html).on('change', series(tasks.html, tasks.inject, browserSync.reload), );
+  watch(paths.watch.css).on('change', function(){setTimeout(series(tasks.css, browserSync.reload), 300)});
   watch(paths.watch.js).on('change', series(tasks.scripts, browserSync.reload));
   watch(paths.watch.images, tasks.images);
   watch(paths.watch.fonts, tasks.fonts);
