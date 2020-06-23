@@ -2,7 +2,7 @@
   padding-top: 25px;
   &__title-section {
     text-align: center;
-    color: #000000;
+    color: $bg-black;
     padding-bottom: 40px;
   }
   &__list {
@@ -15,7 +15,7 @@
     font-size: 0.8125rem;
     letter-spacing: 1px;
     line-height: 20px;
-    color: #111517;
+    color: $main-black;
     font-family: $main-font;
     font-weight: 700;
     padding-bottom: 20px;
@@ -26,7 +26,7 @@
       content: '';
       width: 25px;
       height: 2px;
-      background-color: #ff6b08;
+      background-color: $orange;
       position: absolute;
       bottom: 0;
       left: calc(50% - 12.5px);
@@ -36,7 +36,7 @@
     font-size: 0.6875rem;
     letter-spacing: 1px;
     line-height: 20px;
-    color: #858585;
+    color: $main-gray;
     font-family: $main-font;
     font-weight: 400;
     padding: 0 19px 0 19px;
@@ -54,25 +54,25 @@
     }
     &--icon {
       margin: 0 auto;
-      fill: #ff6b08;
+      fill: $orange;
       display: block;
       height: 45px;
       width: 42px;
     }
     &:hover {
-      background-color: #ff6b08;
+      background-color: $orange;
     }
     &:hover .how-do__item--icon {
-      fill: #fff;
+      fill: $white;
     }
     &:hover .how-do__title {
-      color: #fff;
+      color: $white;
     }
     &:hover .how-do__title::after {
-      background-color: #fff;
+      background-color: $white;
     }
     &:hover .how-do__text {
-      color: #fff;
+      color: $white;
     }
   }
 }
