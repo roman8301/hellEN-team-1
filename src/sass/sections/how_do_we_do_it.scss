@@ -56,8 +56,8 @@
       margin: 0 auto;
       fill: $orange;
       display: block;
-      height: 45px;
-      width: 42px;
+      height: 47px;
+      width: 44px;
     }
     &:hover {
       background-color: $orange;
@@ -94,21 +94,53 @@
   .how-do {
     padding-top: 40px;
     margin-bottom: 80px;
-    &-section {
+
+    &__title-section {
       text-align: start;
       font-size: 2.625rem;
       letter-spacing: 2px;
       line-height: 63px;
     }
-        &__list {
-          justify-content: space-between;
-        }
-        &__item {
-          width: 390px;
-          padding-bottom: 20px;
-          &:nth-child(odd) {
-            margin-right: 0px;
-          }
-        }
+    &__title {
+      font-size: 1.125rem;
+      line-height: 29px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 31px;
+    }
+    &__list {
+      justify-content: space-between;
+    }
+    &__item {
+      width: 390px;
+      padding-bottom: 32px;
+      &:nth-child(odd) {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+@media (min-width: 1680px) {
+  .how-do {
+    padding-top: 70px;
+    margin-bottom: 130px;
+    &__title-section {
+      font-size: 2.875rem;
+    }
+    &__title {
+      font-size: 1.3125rem;
+      line-height: 29px;
+    }
+    &__text {
+      font-size: 1.1875rem;
+    }
+    &__list {
+      justify-content: space-around;
+    }
+    &__item {
+      width: 430px;
+      padding-bottom: 55px;
+    }
   }
 }
