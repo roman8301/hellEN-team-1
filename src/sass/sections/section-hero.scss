@@ -40,6 +40,7 @@
     font-weight: 700;
   }
   &__link {
+    display: block;
     margin: 0 15px 34px 15px;
     width: max-content;
     &:hover .button {
