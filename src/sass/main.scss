@@ -3,17 +3,14 @@
  */
 
 @import 'normalize.scss';
-@import 'base.scss';
-// Helpers
 @import './helpers/fonts.scss';
 @import './helpers/variables.scss';
-// Components
+@import './base.scss';
 @import './components/container.scss';
 @import './components/upper.scss';
 @import './components/logo.scss';
 @import './components/centering.scss';
 @import './components/button.scss';
-//  Section
 @import './sections/header.scss';
 @import './sections/section-hero.scss';
 @import './sections/main_problems';

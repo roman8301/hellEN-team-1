@@ -3,6 +3,7 @@
   padding-bottom: 50px;
   background-image: url('../images/hero-img/hero-background-mobile.png');
   background-repeat: no-repeat;
+  background-position: left -260px bottom 240px;
   background-size: cover;
   &__wrapper {
     display: flex;
@@ -41,9 +42,10 @@
   &__link {
     display: block;
     margin: 0 15px 34px 15px;
-    &:hover {
+    width: max-content;
+    &:hover .button {
       background-color: $hover-button;
-      border: 2px solid $hover-button;
+      // border: 2px solid $hover-button;
     }
   }
   &__benefits-list {
@@ -92,6 +94,7 @@
     padding-top: 46px;
     padding-bottom: 50px;
     background-image: url('../images/hero-img/hero-background-tablet.png');
+    background-position: left bottom 136px;
     &__wrapper {
       display: flex;
       justify-content: space-between;
@@ -125,6 +128,7 @@
     padding-top: 148px;
     padding-bottom: 86px;
     background-image: url('../images/hero-img/hero-background1280.png');
+    background-position: left bottom 180px;
     &__content {
       width: 496px;
       padding-top: 80px;
@@ -171,6 +175,7 @@
     padding-top: 146px;
     padding-bottom: 126px;
     background-image: url('../images/hero-img/hero-background1680.png');
+    background-position: left bottom 280px;
     &__wrapper {
       margin-bottom: 240px;
     }
