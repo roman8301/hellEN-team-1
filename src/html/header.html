@@ -1,4 +1,4 @@
-<!-- <header class="header">
+<header class="header" id="header">
 	<div class="container">
 		<div class="header__body">
 			<div class="header__logo">
@@ -22,35 +22,60 @@
 						<a href="#" class="header__link">Контакты</a>
 					</li>
 				</ul>
-				<button class="button-modal upper">консультация по телефону</button>
+				<!-- <button class="button-modal upper">консультация по телефону</button> -->
 			</nav>
 		</div>
 	</div>	
-</header> -->
+</header>
 
-<header class="header">
-	<div class="container">
-		<nav role="navigation">
-  		<div id="menuToggle">
-    		<input type="checkbox" />
-    		<span></span>
-    		<span></span>
-    		<span></span>
-    		<ul id="menu">
-					<li>
-						<a href="">Программа обучения</a>
-					</li>
-					<li>
-						<a href="">О нас</a>
-					</li>
-					<li>
-						<a href="">Варианты обучения</a>
-					</li>
-					<li>
-						<a href="">Контакты</a>
-					</li>
-    		</ul>
-  		</div>
-		</nav>
-	</div>
+
+<header class="header" id="header">
+  <nav class="navigation container">
+    //= ./logo.html
+    <ul class="menu">
+      <li class="menu__item">
+        <a href="#program" class="menu__link">
+          <span>Программа обучения</span></a>
+      </li>
+      <li class="menu__item">
+        <a href="#teacher" class="menu__link"><span>О нас</span></a>
+      </li>
+      <li class="menu__item">
+        <a href="#about" class="menu__link"><span>Варианты обучения</span></a>
+      </li>
+      <li class="menu__item">
+        <a href="#registration" class="menu__link"><span>Контакты</span></a>
+      </li>
+    </ul>
+    <a href="#registration" class="header__btn btn">Консультация по телефону</a>
+
+    <div class="burger">
+      <div class="burger__wrap container">
+        //= ./logo.html
+        <ul class="menu menu--burger">
+          <li class="menu__item">
+            <a href="#program" class="menu__link">Программа обучения</a>
+          </li>
+          <li class="menu__item">
+            <a href="#teacher" class="menu__link">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="#about" class="menu__link">Варианты обучения</a>
+          </li>
+          <li class="menu__item">
+            <a href="#registration" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+        <a href="#registration" class="burger__btn btn"
+          >Консультация по телефону</a
+        >
+      </div>
+    </div>
+
+    <div class="burger--btn">
+      <div class="header__burger">
+        <span></span>
+      </div>
+    </div>
+	</nav>
 </header>
