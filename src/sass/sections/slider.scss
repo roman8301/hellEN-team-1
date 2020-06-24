@@ -3,6 +3,7 @@
   padding-bottom: 54px;
 
   .slider-title {
+    font-family: $main-font;
     font-size: 1.25rem;
     line-height: 1.62rem;
     letter-spacing: 0.05rem;
@@ -40,6 +41,7 @@
     }
 
     &__subtitle {
+      font-family: $main-font;
       font-size: 0.875rem;
       line-height: 1.75rem;
       letter-spacing: 0.05rem;
@@ -51,6 +53,7 @@
 
     &__description-graduate,
     &__comment-graduate {
+      font-family: $main-font;
       font-size: 0.75rem;
       letter-spacing: 0.05rem;
       font-weight: 500;
@@ -70,6 +73,7 @@
       &--link {
         color: $orange;
         border-bottom: solid 2px #ffd8c9;
+        cursor: pointer;
       }
     }
   }
@@ -130,11 +134,11 @@
       }
 
       &__prev {
-        background: url("../images/logo-icon/slider-icons/prev.svg") no-repeat center;
+        background: url("../images/logo-icon/slider-icons/prev.svg") no-repeat center / cover;
       }
 
       &__next {
-        background: url("../images/logo-icon/slider-icons/next.svg") no-repeat center;
+        background: url("../images/logo-icon/slider-icons/next.svg") no-repeat center / cover;
       }
     }
   }
@@ -239,6 +243,18 @@
 
       .slider-buttons {
         width: 1176px;
+
+        &__prev,
+        &__next {
+          transition: all 0.2s linear;
+
+          &:hover {
+            width: 28px;
+            height: 17px;
+            transition: all 0.2s linear;
+          }
+        }
+
       }
     }
   }
