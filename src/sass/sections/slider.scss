@@ -41,6 +41,7 @@
     }
 
     &__subtitle {
+      font-family: $main-font;
       font-size: 0.875rem;
       line-height: 1.75rem;
       letter-spacing: 0.05rem;
@@ -52,6 +53,7 @@
 
     &__description-graduate,
     &__comment-graduate {
+      font-family: $main-font;
       font-size: 0.75rem;
       letter-spacing: 0.05rem;
       font-weight: 500;
