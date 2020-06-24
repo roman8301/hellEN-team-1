@@ -1,1 +1,3 @@
-# HellEN-Kharkiv-dev
+# HellEN
+
+# Development team: Kharkiv-Dev
