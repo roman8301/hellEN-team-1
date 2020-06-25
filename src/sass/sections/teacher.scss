@@ -5,9 +5,9 @@
   &__header {
     margin-bottom: 30px;
     font-family: $main-font;
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.875rem;
     color: $main-black;
     font-weight: 800;
   }
@@ -18,9 +18,9 @@
 
   &__name {
     margin: 0;
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 29px;
+    font-size: 1rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.8125rem;
     font-family: $main-font;
     color: $main-black;
     font-weight: 800;
@@ -51,8 +51,8 @@
   }
 
   &__item {
-    font-size: 13px;
-    letter-spacing: 1px;
+    font-size: 0.8125rem;
+    letter-spacing: 0.0625rem;
     color: $main-black;
     font-family: $main-font;
     font-weight: 600;
@@ -65,9 +65,9 @@
 
   &__text {
     margin-bottom: 23px;
-    font-size: 11px;
-    letter-spacing: 1px;
-    line-height: 20px;
+    font-size: 0.6875rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.25rem;
     color: $main-gray;
     font-family: $main-font;
     font-weight: 400;
@@ -75,9 +75,9 @@
 
   &__link {
     text-decoration: underline;
-    font-size: 11px;
-    letter-spacing: 1px;
-    line-height: 29px;
+    font-size: 0.6875rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.8125rem;
     color: $orange;
     font-family: $main-font;
     font-weight: 400;
@@ -92,7 +92,7 @@
     }
 
     &__header {
-      font-size: 26px;
+      font-size: 1.625rem;
     }
 
     &__picture {
@@ -104,8 +104,8 @@
     }
 
     &__name {
-      font-size: 20px;
-      line-height: 18px;
+      font-size: 1.25rem;
+      line-height: 1.125rem;
       &::after {
         margin-top: 15px;
         width: 396px;
@@ -113,7 +113,7 @@
     }
 
     &__list {
-      line-height: 20px;
+      line-height: 1.25rem;
       &::after {
         left: 0px;
         width: 25px;
@@ -133,13 +133,13 @@
     }
 
     &__header {
-      font-size: 42px;
-      letter-spacing: 2px;
+      font-size: 2.625rem;
+      letter-spacing: 0.125rem;
       margin-bottom: 50px;
     }
 
     &__name {
-      font-size: 29px;
+      font-size: 1.8125rem;
       &::after {
         margin-top: 15px;
         width: 602px;
@@ -147,20 +147,20 @@
     }
 
     &__item {
-      font-size: 17px;
-      letter-spacing: 1px;
-      line-height: 26px;
+      font-size: 1.0625rem;
+      letter-spacing: 0.0625rem;
+      line-height: 1.625rem;
       background-size: 4%;
     }
 
     &__text {
-      font-size: 17px;
-      letter-spacing: 1px;
-      line-height: 26px;
+      font-size: 1.0625rem;
+      letter-spacing: 0.0625rem;
+      line-height: 1.625rem;
     }
 
     &__list {
-      line-height: 28px;
+      line-height: 1.75rem;
       &::after {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -168,9 +168,9 @@
     }
 
     &__link {
-      font-size: 17px;
-      letter-spacing: 1px;
-      line-height: 29px;
+      font-size: 1.0625rem;
+      letter-spacing: 0.0625rem;
+      line-height: 1.8125rem;
     }
   }
 }
@@ -181,7 +181,7 @@
     padding-bottom: 125px;
 
     &__header {
-      font-size: 46px;
+      font-size: 2.875rem;
     }
     &__description {
       min-width: 660px;
