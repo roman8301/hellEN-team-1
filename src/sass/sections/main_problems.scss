@@ -11,23 +11,26 @@
     padding-bottom: 19px;
     color: $white;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     font-size: 1.25rem;
-    line-height: 30px;
+    line-height: 1.875rem;
   }
   &__list {
     background-color: $white;
     counter-reset: item;
     box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
   }
-  &__item {
+  &__text {
     font-family: $main-font;
     color: $last-black;
     font-weight: 700;
     font-size: 0.8125rem;
-    line-height: 20px;
+    line-height: 1.25rem;
+    letter-spacing: 0.0625rem;
+  }
+  &__item {
     position: relative;
-    padding-top: 15px;
+    margin-top: 15px;
     margin-left: 28px;
     width: 200px;
     &:last-child {
@@ -40,18 +43,20 @@
       height: 2px;
       background-color: $orange;
       position: absolute;
-      top: 25px;
+      top: 14.5px;
       left: 0;
     }
     &::before {
       counter-increment: item;
       content: counter(item, decimal-leading-zero) ' ';
-      font-weight: 600;
+      font-weight: 500;
       font-size: 0.875rem;
+      line-height: 1.8125rem;
+      letter-spacing: 0.0625rem;
       display: inline-block;
       color: $orange;
-      margin-bottom: 12px;
-      margin-left: 40px;
+      padding-bottom: 5px;
+      padding-left: 35px;
     }
   }
 }
@@ -59,18 +64,17 @@
   .main-problems {
     background: url('../images/fire768.png') right bottom 80% no-repeat,
       linear-gradient(to bottom, $main-black 68%, transparent 32%);
-    &__item {
-      width: 250px;
-      font-size: 1.125rem;
-      line-height: 25px;
-      &::after {
-        top: 27px;
+      &__text {
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
       }
+      &__item {
+      width: 250px;
     }
     &__title {
       width: 460px;
       font-size: 1.625rem;
-      line-height: 33px;
+      line-height: 2.0625rem;
     }
     &__list {
       display: flex;
@@ -87,8 +91,8 @@
     margin-bottom: 50px;
     &__title {
       font-size: 2.625rem;
-      letter-spacing: 2px;
-      line-height: 57px;
+      letter-spacing: 0.125rem;
+      line-height: 3.5625rem;
       width: 740px;
       padding-bottom: 50px;
     }
@@ -96,16 +100,13 @@
       padding: 35px 100px 0px 100px;
       justify-content: space-between;
     }
+    &__text {
+      font-size: 1.125rem;
+      line-height: 1.8125rem;
+    }
     &__item {
       width: 270px;
       margin-left: 0px;
-      font-size: 1.125rem;
-      letter-spacing: 1px;
-      line-height: 29px;
-      &::after {
-        top: 28px;
-      }
-
       &:nth-child(-n + 3) {
         padding-bottom: 28px;
       }
@@ -114,8 +115,7 @@
       }
       &::before {
         font-size: 1.3125rem;
-        letter-spacing: 1px;
-        line-height: 29px;
+        line-height: 1.8125rem;
       }
     }
   }
@@ -129,7 +129,7 @@
 
     &__title {
       font-size: 2.875rem;
-      line-height: 63px;
+      line-height: 3.9375rem;
       width: 810px;
       padding-bottom: 75px;
     }
@@ -137,14 +137,11 @@
       padding: 55px 100px 0px 100px;
       justify-content: space-between;
     }
+    &__text {
+      font-size: 1.3125rem;
+    }
     &__item {
       width: 327px;
-      font-size: 1.3125rem;
-      line-height: 29px;
-      &::after {
-        top: 29px;
-      }
-
       &:nth-child(-n + 3) {
         padding-bottom: 28px;
       }
@@ -153,7 +150,6 @@
       }
       &::before {
         font-size: 1.3125rem;
-        line-height: 29px;
       }
     }
   }
