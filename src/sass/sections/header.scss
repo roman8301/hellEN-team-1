@@ -42,6 +42,7 @@
   &__button-link {
     display: none;
   }
+
   &__burger-menu {
     position: absolute;
     display: block;
@@ -70,7 +71,7 @@
   &__link {
     color: $white;
     width: 100%;
-    padding: 10px 10px 10px 54px;
+    padding: 10px;
     display: block;
     font-family: $button-font;
     font-weight: 700;
@@ -137,6 +138,15 @@
 #menu-check:checked .logo__wrapper {
   z-index: 100;
 }
+
+@media (max-width: 768px) {
+  .header {
+    &__link {
+      padding-left: 54px;
+  }
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     &__burger-button {
