@@ -45,8 +45,8 @@
   &__burger-menu {
     position: absolute;
     display: block;
-    width: 100%;
-    top: -100%;
+    width: 0;
+    top: -135%;
     right: 0;
     background-color: rgba(0, 0, 0, 0.86);
     transform: translateY(5px);
@@ -54,7 +54,7 @@
     font-size: 0;
     overflow: hidden;
     transition: 0.5s all;
-    z-index: 99;
+    z-index: 98;
   }
   &__link { 
       color: $white;
