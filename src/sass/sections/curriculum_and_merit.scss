@@ -94,7 +94,7 @@
     width: 100%;
     margin: 0;
     &::before {
-      @include counter
+      @include counter;
       padding-bottom: 5px;
       padding-left: 35px;
     }
@@ -121,6 +121,7 @@
         position: absolute;
         top: 0;
         left: -4px;
+        @include transition;
       }
     }
   }
@@ -144,7 +145,11 @@
         position: absolute;
         width: 2px;
         height: 1270px;
-        background-color: $time-line-color;
+        background-image: linear-gradient(
+            33deg,
+            $time-line-color 0%,
+            $time-line-color 99%
+          );
       }
       &:hover {
         &:before {
@@ -241,7 +246,7 @@
           1deg,
           $orange 0%,
           $orange 99%
-        );
+        );@include transition;
       }
     }
   }
@@ -276,6 +281,7 @@
         background-color: $orange;
         top: -23px;
         left: 0;
+        @include transition;
       }
     }
     &__item-subtitle {
@@ -346,6 +352,7 @@
         width: 20px;
         height: 20px;
         border-radius: 20px;
+        @include transition;
       }
     }
     &__item-subtitle {
