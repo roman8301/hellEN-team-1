@@ -1,29 +1,29 @@
-<header class="header" id="header">
-	<div class="container">
-		<div class="header__body">
-			<div class="header__logo">
-				//= ./components/logo.html
-			</div>
-			<div class="header__burger">
-				<span></span>
-			</div>
-			<nav class="header__menu">
-				<ul class="header__list upper">
-					<li class="header__item">
-						<a href="#curriculum" class="header__link">Программа обучения</a>
-					</li>
-					<li class="header__item">
-						<a href="#teacher" class="header__link">О нас</a>
-					</li>
-					<li class="header__item">
-						<a href="#how_do" class="header__link">Варианты обучения</a>
-					</li>
-					<li class="header__item">
-						<a href="#feddback" class="header__link">Контакты</a>
-					</li>
-				</ul>
-				<!-- <button class="button-modal upper">консультация по телефону</button> -->
-			</nav>
-		</div>
-	</div>	
+<header class="container header-container">
+    <div class="header-wrapper">
+        <div class="header__logo">
+            //= ./components/logo.html
+        </div>
+        <div class="header__navigation">
+            <a href="#feedback" class="header__button-link">
+                <div class="header__button upper">Консультация по телефону</div>
+            </a>
+            <div class="burger-menu">
+                <input type="checkbox" id="menu-check">
+                <label class="label-checkbox" for="menu-check"></label>
+                <div class="burger-line first-line"></div>
+                <div class="burger-line second-line"></div>
+                <div class="burger-line third-line"></div>
+                <div class="burger-line fourth-line"></div>
+                <nav class="header__burger-menu">
+                    <a class="header__link" href="#curriculum">Программа обучения</a>
+                    <a class="header__link" href="#about-us">О нас</a>
+                    <a class="header__link" href="#how-do">Варианты обучения</a>
+                    <a class="header__link" href="#contacts">Контакты</a>
+                    <a class="header__link header__burger-button" href="#feedback">
+                        <div class="header__button upper">Консультация по телефону</div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
