@@ -23,15 +23,10 @@
     margin-bottom: 18px;
 
     &::after {
-      display: inline-block;
-      content: '';
-      width: 25px;
-      height: 2px;
-      background-color: $orange;
-      position: absolute;
-      bottom: 0;
+      @include dash;
+      top: 100%;
       left: calc(50% - 12.5px);
-    }
+   }
   }
   &__text {
     font-size: 0.6875rem;
