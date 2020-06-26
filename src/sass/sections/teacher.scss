@@ -17,6 +17,7 @@
   }
 
   &__name {
+    position: relative;
     margin: 0;
     font-size: 1rem;
     letter-spacing: 0.0625rem;
@@ -24,29 +25,32 @@
     font-family: $main-font;
     color: $main-black;
     font-weight: 800;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
 
     &::after {
-      margin-bottom: 25px;
-      display: block;
-      content: '';
+      @include pseudo;
+      left: 0;
+      bottom: 0;
       width: 280px;
       height: 1px;
       background-color: $main-gray;
     }
   }
   &__list {
+    position: relative;
     margin: 0;
     padding: 0;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
 
     &::after {
-      position: relative;
-      left: 25px;
-      display: block;
-      content: '';
+      @include pseudo;
+      left: 0;
+      bottom: 0;
       width: 25px;
       height: 2px;
       background-color: $orange;
-      margin-bottom: 15px;
     }
   }
 
@@ -61,6 +65,9 @@
     background-image: url(../images/icons/teacher/check.svg);
     background-repeat: no-repeat;
     background-position: 0px 0px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   &__text {
@@ -140,8 +147,9 @@
 
     &__name {
       font-size: 1.8125rem;
-      &::after {
-        margin-top: 15px;
+      padding-bottom: 16px;
+      margin-bottom: 35px;
+      &::after {      
         width: 602px;
       }
     }
@@ -161,10 +169,8 @@
 
     &__list {
       line-height: 1.75rem;
-      &::after {
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
+      padding-bottom: 35px;
+      margin-bottom: 35px;
     }
 
     &__link {
