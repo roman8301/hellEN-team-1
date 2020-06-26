@@ -11,150 +11,126 @@
     padding-bottom: 19px;
     color: $white;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     font-size: 1.25rem;
-    line-height: 30px;
+    line-height: 1.875rem;
   }
   &__list {
     background-color: $white;
+    padding: 14px 25px 25px 28px;
     counter-reset: item;
     box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
   }
-  &__item {
+  &__text {
     font-family: $main-font;
     color: $last-black;
     font-weight: 700;
     font-size: 0.8125rem;
-    line-height: 20px;
+    line-height: 1.25rem;
+    letter-spacing: 0.0625rem;
+  }
+  &__item {
     position: relative;
-    padding-top: 15px;
-    margin-left: 28px;
-    width: 200px;
+    width: 100%;
+    margin-bottom: 10px;
     &:last-child {
-      padding-bottom: 32px;
+      margin-bottom: 0px;
     }
     &::after {
-      display: inline-block;
-      content: '';
-      width: 25px;
-      height: 2px;
-      background-color: $orange;
-      position: absolute;
-      top: 25px;
-      left: 0;
+      @include dash;
     }
     &::before {
-      counter-increment: item;
-      content: counter(item, decimal-leading-zero) ' ';
-      font-weight: 600;
-      font-size: 0.875rem;
-      display: inline-block;
-      color: $orange;
-      margin-bottom: 12px;
-      margin-left: 40px;
+      @include counter padding-bottom: 5px;
+      padding-left: 35px;
     }
   }
 }
 @media (min-width: 768px) {
   .main-problems {
-    background: url('../images/fire768.png') right bottom 80% no-repeat,
+    background: url('../images/main-problem-images/fire768.png') right bottom 90% no-repeat,
       linear-gradient(to bottom, $main-black 68%, transparent 32%);
+    margin-bottom: 70px;
+      &__text {
+      font-size: 0.8125rem;
+      line-height: 1.25rem;
+    }
     &__item {
-      width: 250px;
-      font-size: 1.125rem;
-      line-height: 25px;
-      &::after {
-        top: 27px;
+      flex-basis: 45%;
+      &:nth-child(odd) {
+        margin-right: 40px;
+      }
+      &:nth-child(-n + 4) {
+        margin-bottom: 15px;
       }
     }
     &__title {
       width: 460px;
       font-size: 1.625rem;
-      line-height: 33px;
+      line-height: 2.0625rem;
     }
     &__list {
       display: flex;
-      justify-content: space-around;
+      padding: 10px 25px 25px 108px;
       flex-wrap: wrap;
     }
   }
 }
 @media (min-width: 1280px) {
   .main-problems {
-    background: url('../images/fire1280.png') right bottom 65% no-repeat,
+    background: url('../images/main-problem-images/fire1280.png') right bottom 75% no-repeat,
       linear-gradient(to bottom, $main-black 87%, transparent 13%);
     padding-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 95px;
     &__title {
       font-size: 2.625rem;
-      letter-spacing: 2px;
-      line-height: 57px;
+      letter-spacing: 0.125rem;
+      line-height: 3.5625rem;
       width: 740px;
       padding-bottom: 50px;
     }
     &__list {
-      padding: 35px 100px 0px 100px;
-      justify-content: space-between;
+      padding: 35px 100px 50px 100px;
+    }
+    &__text {
+      font-size: 1.125rem;
+      line-height: 1.8125rem;
     }
     &__item {
-      width: 270px;
-      margin-left: 0px;
-      font-size: 1.125rem;
-      letter-spacing: 1px;
-      line-height: 29px;
-      &::after {
-        top: 28px;
+      margin-right: 30px;
+      margin-bottom: 0;
+      flex-basis: 30%;
+      &:not(:nth-child(3n)) {
+        margin-right: 30px;
       }
-
       &:nth-child(-n + 3) {
-        padding-bottom: 28px;
-      }
-      &:nth-child(n + 4) {
-        padding-bottom: 50px;
+        margin-bottom: 40px;
       }
       &::before {
-        font-size: 1.3125rem;
-        letter-spacing: 1px;
-        line-height: 29px;
+        font-size: 21px;
+        line-height: 1.8125rem;
       }
     }
   }
 }
 @media (min-width: 1680px) {
   .main-problems {
-    background: url('../images/fire1680.png') right bottom 58% no-repeat,
+    background: url('../images/main-problem-images/fire1680.png') right bottom 58% no-repeat,
       linear-gradient(to bottom, $main-black 78%, transparent 22%);
     padding-top: 113px;
-    margin-bottom: 70px;
+    margin-bottom: 140px;
 
     &__title {
       font-size: 2.875rem;
-      line-height: 63px;
+      line-height: 3.9375rem;
       width: 810px;
       padding-bottom: 75px;
     }
     &__list {
-      padding: 55px 100px 0px 100px;
-      justify-content: space-between;
+      padding: 65px 100px 50px 100px;
+      // justify-content: space-between;
     }
-    &__item {
-      width: 327px;
+    &__text {
       font-size: 1.3125rem;
-      line-height: 29px;
-      &::after {
-        top: 29px;
-      }
-
-      &:nth-child(-n + 3) {
-        padding-bottom: 28px;
-      }
-      &:nth-child(n + 4) {
-        padding-bottom: 75px;
-      }
-      &::before {
-        font-size: 1.3125rem;
-        line-height: 29px;
-      }
     }
   }
 }

@@ -1,0 +1,25 @@
+@mixin dash ($display: block, $pos: absolute, $content: '', $back-col: $orange, $wid: 25px, $heig: 2px, $top: 14.5px,  $left: 0 ) {
+    display: $display;
+    position: $pos;
+    content: $content;
+    background-color: $back-col;
+    width: $wid;
+    height: $heig;
+    top: $top;
+    left: $left;
+}
+@mixin counter ($display: inline-block, $coun-incr: item, $content: counter(item, decimal-leading-zero) ' ', $font-weight: 500, $font-size: 0.875rem, $line-height: 1.8125rem, $letter-spacing: 0.0625rem, $color: $orange) {    
+    display: $display;
+    counter-increment: $coun-incr;
+    content: $content;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
+@mixin pseudo ($display: inline-block, $pos: absolute, $content: '') {
+    display: $display;
+    position: $pos;
+    content: $content;
+}
