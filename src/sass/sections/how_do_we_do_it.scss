@@ -1,5 +1,5 @@
 .how-do {
-  padding-top: 25px;
+  padding-top: 0;
   &__title-section {
     text-align: center;
     color: $bg-black;
@@ -94,7 +94,6 @@
 
 @media (min-width: 1280px) {
   .how-do {
-    padding-top: 40px;
     margin-bottom: 80px;
 
     &__title-section {
@@ -125,7 +124,6 @@
 }
 @media (min-width: 1680px) {
   .how-do {
-    padding-top: 70px;
     margin-bottom: 130px;
     &__title-section {
       font-size: 2.875rem;
