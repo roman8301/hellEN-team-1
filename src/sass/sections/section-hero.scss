@@ -1,0 +1,210 @@
+.hero {
+  padding-bottom: 50px;
+  background-image: url('../images/hero-img/hero-background-mobile.png');
+  background-repeat: no-repeat;
+  background-position: left -260px bottom 240px;
+  background-size: cover;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 1.25rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.8125rem;
+    color: $last-black;
+    font-family: $main-font;
+    font-weight: 800;
+    margin-bottom: 34px;
+  }
+  &__title--second-line {
+    display: block;
+  }
+  &__text {
+    font-size: 0.875rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.25rem;
+    color: $last-gray;
+    font-family: $main-font;
+    font-weight: 500;
+    margin-bottom: 38px;
+  }
+  &__text--second-line {
+    display: block;
+    color: $last-black;
+    font-weight: 700;
+  }
+  &__text--third-line {
+    color: $orange;
+    font-weight: 700;
+  }
+  &__link {
+    display: block;
+    margin: 0 15px 34px 15px;
+    width: max-content;
+    &:hover .button {
+      background-color: $hover-button;
+      @include transition;
+    }
+  }
+  &__benefits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-item {
+      width: 200px;
+      padding-left: 80px;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+      &--student {
+        background-image: url('../images/hero-img/icon-student.svg');
+      }
+      &--mobile {
+        background-image: url('../images/hero-img/icon-mobile.svg');
+      }
+      &--dollar {
+        background-image: url('../images/hero-img/icon-dollar.svg');
+      }
+    }
+    &-link {
+      font-size: 0.8125rem;
+      line-height: 1.25rem;
+      color: $last-black;
+      font-family: $main-font;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 114px;
+    &__img {
+      margin: 0 auto 86px;
+    }
+    &__benefits-list-item:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 146px;
+    padding-bottom: 50px;
+    background-image: url('../images/hero-img/hero-background-tablet.png');
+    background-position: left bottom 136px;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 128px;
+    }
+    &__content {
+      width: 284px;
+    }
+    &__title {
+      font-size: 1.625rem;
+      line-height: 2.0625rem;
+      margin-bottom: 30px;
+    }
+    &__text {
+      font-size: 0.875rem;
+      margin-bottom: 34px;
+    }
+    &__link {
+      margin: 0;
+    }
+    &__benefits-list {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    padding-top: 148px;
+    padding-bottom: 86px;
+    background-image: url('../images/hero-img/hero-background1280.png');
+    background-position: left bottom 180px;
+    &__content {
+      width: 496px;
+      padding-top: 80px;
+    }
+    &__title {
+      font-size: 3rem;
+      line-height: 3.625rem;
+      margin-bottom: 38px;
+    }
+    &__text {
+      font-size: 1.125rem;
+      line-height: 1.625rem;
+      margin-bottom: 66px;
+    }
+    &__text--second-line {
+      display: inline-block;
+    }
+    &__benefits-list-item {
+      width: 378px;
+      padding-left: 84px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      &--student {
+        background-image: url('../images/hero-img/icon-student-desktop.svg');
+      }
+      &--mobile {
+        background-image: url('../images/hero-img/icon-mobile-desktop.svg');
+      }
+      &--dollar {
+        background-image: url('../images/hero-img/icon-dollar-desktop.svg');
+      }
+    }
+    &__benefits-list-link {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+  }
+}
+@media (min-width: 1680px) {
+  .hero {
+    padding-top: 146px;
+    padding-bottom: 126px;
+    background-image: url('../images/hero-img/hero-background1680.png');
+    background-position: left bottom 280px;
+    &__wrapper {
+      margin-bottom: 240px;
+    }
+    &__img-wrapper {
+      width: 839px;
+      height: 100%;
+      position: absolute;
+      top: 144px;
+      left: 796px;
+    }
+    &__content {
+      width: 610px;
+      padding-top: 92px;
+    }
+    &__title {
+      font-size: 3.625rem;
+      line-height: 4.75rem;
+      letter-spacing: 0.125rem;
+      margin-bottom: 40px;
+    }
+    &__text {
+      font-size: 1.3125rem;
+      line-height: 2.0625rem;
+      margin-bottom: 44px;
+      width: 90%;
+      display: inline-block;
+    }
+    &__benefits-list-link {
+      font-size: 1.3125rem;
+      line-height: 2.0625rem;
+    }
+    &__benefits-list-item {
+      width: 422px;
+    }
+  }
+}

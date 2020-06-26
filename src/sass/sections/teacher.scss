@@ -1,0 +1,202 @@
+.teacher {
+  padding-top: 247px;
+  padding-bottom: 40px;
+
+  &__header {
+    margin-bottom: 30px;
+    font-family: $main-font;
+    font-size: 1.25rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.875rem;
+    color: $main-black;
+    font-weight: 800;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    position: relative;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.8125rem;
+    font-family: $main-font;
+    color: $main-black;
+    font-weight: 800;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+
+    &::after {
+      @include pseudo;
+      left: 0;
+      bottom: 0;
+      width: 280px;
+      height: 1px;
+      background-color: $main-gray;
+    }
+  }
+  &__list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+
+    &::after {
+      @include pseudo;
+      left: 0;
+      bottom: 0;
+      width: 25px;
+      height: 2px;
+      background-color: $orange;
+    }
+  }
+
+  &__item {
+    font-size: 0.8125rem;
+    letter-spacing: 0.0625rem;
+    color: $main-black;
+    font-family: $main-font;
+    font-weight: 600;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    background-image: url(../images/icons/teacher/check.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 23px;
+    font-size: 0.6875rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.25rem;
+    color: $main-gray;
+    font-family: $main-font;
+    font-weight: 400;
+  }
+
+  &__link {
+    text-decoration: underline;
+    font-size: 0.6875rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.8125rem;
+    color: $orange;
+    font-family: $main-font;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) {
+  .teacher {
+    &__wraper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__header {
+      font-size: 1.625rem;
+    }
+
+    &__picture {
+      min-width: 247px;
+    }
+
+    &__description {
+      max-width: 400px;
+    }
+
+    &__name {
+      font-size: 1.25rem;
+      line-height: 1.125rem;
+      &::after {
+        margin-top: 15px;
+        width: 396px;
+      }
+    }
+
+    &__list {
+      line-height: 1.25rem;
+      &::after {
+        left: 0px;
+        width: 25px;
+        height: 2px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .teacher {
+    padding-top: 90px;
+    padding-bottom: 70px;
+
+    &__description {
+      min-width: 605px;
+    }
+
+    &__header {
+      font-size: 2.625rem;
+      letter-spacing: 0.125rem;
+      margin-bottom: 50px;
+    }
+
+    &__name {
+      font-size: 1.8125rem;
+      padding-bottom: 16px;
+      margin-bottom: 35px;
+      &::after {      
+        width: 602px;
+      }
+    }
+
+    &__item {
+      font-size: 1.0625rem;
+      letter-spacing: 0.0625rem;
+      line-height: 1.625rem;
+      background-size: 4%;
+    }
+
+    &__text {
+      font-size: 1.0625rem;
+      letter-spacing: 0.0625rem;
+      line-height: 1.625rem;
+    }
+
+    &__list {
+      line-height: 1.75rem;
+      padding-bottom: 35px;
+      margin-bottom: 35px;
+    }
+
+    &__link {
+      font-size: 1.0625rem;
+      letter-spacing: 0.0625rem;
+      line-height: 1.8125rem;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .teacher {
+    padding-top: 315px;
+    padding-bottom: 125px;
+
+    &__header {
+      font-size: 2.875rem;
+    }
+    &__description {
+      min-width: 660px;
+    }
+
+    &__name {
+      &::after {
+        width: 656px;
+      }
+    }
+  }
+}

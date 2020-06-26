@@ -1,0 +1,138 @@
+.guaranty {
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  &__header {
+    margin-bottom: 25px;
+    font-family: $main-font;
+    font-size: 1.25rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.875rem;
+    color: $main-black;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  &__bg--wraper {
+    background-color: $light-gray;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 40px;
+    font-size: 0.6875rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.25rem;
+    color: $last-black;
+    font-family: $main-font;
+    font-weight: 500;
+    background-image: url(../images/icons/guaranty/fire.svg);
+    background-repeat: no-repeat;
+    background-position: -5px 0px;
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+    &:not(:last-child)::after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 100%;
+      border-width: 1px;
+      border-color: rgb(186, 186, 186);
+      border-style: dotted;
+      position: absolute;
+      top: 20px;
+      left: 5px;
+    }
+  }
+
+  &__span {
+    color: $orange;
+  }
+}
+
+@media (min-width: 768px) {
+  .guaranty {
+    &__bg--wraper {
+      max-width: 688px;
+      margin: 0 auto;
+    }
+
+    &__header {
+      font-size: 1.625rem;
+    }
+
+    &__list {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .guaranty {
+    &__bg--wraper {
+      max-width: 1210px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__header {
+      font-size: 2.625rem;
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      padding-left: 120px;
+      padding-right: 130px;
+    }
+
+    &__item {
+      background-position: -2px 0px;
+      background-size: 3%;
+      font-size: 1.125rem;
+      padding-left: 60px;
+      line-height: 1.8125rem;
+      &:not(:last-of-type) {
+        margin-bottom: 40px;
+      }
+      &:not(:last-child)::after {
+        height: 115%;
+        top: 28px;
+        left: 11px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .guaranty {
+    &__header {
+      font-size: 2.875rem;
+      margin-bottom: 50px;
+    }
+
+    &__bg--wraper {
+      max-width: 1340px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__list {
+      padding-left: 90px;
+      padding-right: 140px;
+    }
+    &__item {
+      font-size: 1.3125rem;
+      background-size: 3%;
+      &:not(:last-child)::after {
+        left: 13px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,228 @@
+.header-container {
+  position: relative;
+}
+
+.header-wrapper {
+  padding-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: absolute;
+}
+.burger-menu {
+  top: 10px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.header {
+  &__logo {
+    position: relative;
+    margin: 0;
+    z-index: 99;
+  }
+  &__button {
+    width: 252px;
+    height: 50px;
+    border: 2px solid $orange;
+    color: $orange;
+    text-align: center;
+    font-family: $button-font;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 18px 20px;
+    margin: 0 auto;
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+  &__button-link {
+    display: none;
+  }
+  &__burger-menu {
+    position: absolute;
+    display: block;
+    width: 0;
+    top: -135%;
+    right: 0;
+    transform: translateX(5px);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.5s all;
+<<<<<<< HEAD
+    z-index: 98;
+=======
+    z-index: 99;
+    &::after {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.86);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      z-index: -1;
+    }
+>>>>>>> ebc0b1eb63508a7bec9c33dcf0745df6d1463f0f
+  }
+  &__link {
+    color: $white;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    font-family: $button-font;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    @include transition;
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+#menu-check {
+  display: none;
+}
+.label-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  cursor: pointer;
+}
+// линии бургера и анимация
+.burger-line {
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  width: 24px;
+  height: 2px;
+  background-color: rgb(24, 25, 29);
+  transition: 0.5s all;
+}
+.second-line,
+.third-line {
+  top: 15px;
+}
+.fourth-line {
+  top: 20px;
+}
+
+#menu-check:checked ~ .header__burger-menu {
+  font-size: 16px;
+  padding-top: 80px;
+  max-height: 688px;
+  min-width: 280px;
+}
+#menu-check:checked ~ .first-line {
+  display: none;
+}
+#menu-check:checked ~ .second-line {
+  transform: rotate(45deg);
+  background-color: $white;
+  z-index: 100;
+}
+#menu-check:checked ~ .third-line {
+  transform: rotate(-45deg);
+  background-color: $white;
+  z-index: 100;
+}
+#menu-check:checked ~ .fourth-line {
+  display: none;
+}
+#menu-check:checked .logo__wrapper {
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  .header {
+    &__burger-button {
+      display: none;
+    }
+    &__link {
+      font-size: 1.25rem;
+      letter-spacing: 1px;
+      line-height: 29px;
+      // color: $last-black;
+      font-family: $main-font;
+      font-weight: 800;
+    }
+    &__navigation {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__button-link {
+      display: initial;
+      margin-right: 45px;
+    }
+  }
+  #menu-check:checked ~ .header__burger-menu {
+    min-width: 688px;
+    padding: 100px 200px 0;
+  }
+}
+@media (min-width: 1280px) {
+  .label-checkbox,
+  .burger-line {
+    display: none;
+  }
+  .header {
+    &__button-link {
+      margin: 0;
+    }
+    &__navigation {
+      flex-direction: row-reverse;
+    }
+    &__link {
+      font-size: 0.75rem;
+      width: auto;
+      height: 100%;
+      color: $last-gray;
+    }
+    &__burger-menu {
+      overflow: visible;
+      position: initial;
+      width: auto;
+      height: auto;
+      display: flex;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  .burger-menu {
+    top: 0;
+    width: 620px;
+  }
+}
+@media (min-width: 1680px){
+.header {
+    &__button-link {
+      margin: 0;
+    }
+    &__navigation {
+      flex-direction: row-reverse;
+    }
+    &__link {
+      font-size: 0.75rem;
+      width: auto;
+      height: 100%;
+      color: $last-gray;
+    }
+    &__burger-menu {
+      overflow: visible;
+      position: initial;
+      width: auto;
+      height: auto;
+      display: flex;
+      &::after{
+        display: none;
+      }
+    }
+  }
+}
