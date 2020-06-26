@@ -41,14 +41,8 @@
     position: relative;
     padding: 14px 0 10px 35px;
     &::before {
-      content: '';
-      display: inline-block;
-      width: 25px;
-      height: 2px;
-      background-color: $orange;
-      position: absolute;
+      @include dash;
       top: 50%;
-      left: 0px;
       margin: 0;
     }
   }
@@ -74,8 +68,7 @@
 }
 .virtues {
   position: absolute;
-  counter-reset: virtues-counter;
-  &__title {
+    &__title {
     font-family: $main-font;
     color: $white;
     font-size: 1.25rem;
@@ -86,43 +79,27 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    counter-reset: item;
     padding: 14px 25px 25px 28px;
     box-shadow: 4px 6.928px 15.54px 5.46px rgba($color: $last-black, $alpha: 0.04);
     background-color: $white;
   }
   &__item {
+    position: relative;
     font-family: $main-font;
     font-weight: 700;
     font-size: 0.8125rem;
     line-height: 1.25rem;
     color: $last-black;
-    max-width: 100%;
-  }
-  &__item-namber {
-    font-family: $main-font;
-    font-size: 0.875rem;
-    font-weight: 500;
-    line-height: 1.875rem;
-    color: $orange;
-    display: inline-block;
-    position: relative;
-    padding-left: 35px;
     width: 100%;
     margin: 0;
-    &::after {
-      content: '0' counter(virtues-counter);
-      counter-increment: virtues-counter;
-    }
     &::before {
-      content: '';
-      display: inline-block;
-      width: 25px;
-      height: 2px;
-      background-color: $orange;
-      position: absolute;
-      top: 50%;
-      left: 0px;
-      margin: 0;
+      @include counter
+      padding-bottom: 5px;
+      padding-left: 35px;
+    }
+    &::after {
+      @include dash;
     }
   }
 }
@@ -213,13 +190,11 @@
     }
     &__item-title {
       &::before {
-        content: '';
-        display: inline-block;
+        @include pseudo;
         width: 10px;
         height: 10px;
         border-radius: 10px;
         background-color: $orange;
-        position: absolute;
         top: 0;
         left: -4px;
       }
@@ -236,9 +211,9 @@
     &__list {
       padding-left: 108px;
       padding-top: 10px;
-    }
+        }
     &__item {
-      flex-basis: 40%;
+      flex-basis: 41%;
       &:nth-child(odd) {
         margin-right: 45px;
       }
@@ -254,12 +229,10 @@
     background-size: 547px 407px;
     background-position: left -20px bottom 205px;
     &::before {
-      content: '';
-      display: inline-block;
+      @include pseudo;
       width: 100%;
       height: 2px;
       background-color: $time-line-color;
-      position: absolute;
       top: 158px;
     }
     &:hover {
@@ -296,13 +269,11 @@
       padding-top: 28px;
       margin-bottom: 16px;
       &::before {
-        content: '';
-        display: inline-block;
+        @include pseudo;
         width: 18px;
         height: 18px;
         border-radius: 18px;
         background-color: $orange;
-        position: absolute;
         top: -23px;
         left: 0;
       }
@@ -330,6 +301,9 @@
       font-size: 1.125rem;
       line-height: 1.8125rem;
       flex-basis: 30%;
+      &::before {
+        font-size: 21px;
+      }
       &:not(:nth-child(3n)) {
         margin-right: 30px;
       }

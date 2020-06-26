@@ -1,5 +1,5 @@
 .how-do {
-  padding-top: 25px;
+  padding-top: 0;
   &__title-section {
     text-align: center;
     color: $bg-black;
@@ -14,8 +14,8 @@
     display: block;
     position: relative;
     font-size: 0.8125rem;
-    letter-spacing: 1px;
-    line-height: 20px;
+    letter-spacing: 0.0625rem;
+    line-height: 1.25rem;
     color: $main-black;
     font-family: $main-font;
     font-weight: 700;
@@ -35,8 +35,8 @@
   }
   &__text {
     font-size: 0.6875rem;
-    letter-spacing: 1px;
-    line-height: 20px;
+    letter-spacing: 0.0625rem;
+    line-height: 1.25rem;
     color: $main-gray;
     font-family: $main-font;
     font-weight: 400;
@@ -49,8 +49,7 @@
     margin-bottom: 16px;
     transition: all 0.25s ease 0.2s;
     box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
-    transition: all .3s linear;
-
+    
     &--wrapper {
       padding-top: 30px;
       padding-bottom: 20px;
@@ -95,22 +94,21 @@
 
 @media (min-width: 1280px) {
   .how-do {
-    padding-top: 40px;
     margin-bottom: 80px;
 
     &__title-section {
       text-align: start;
       font-size: 2.625rem;
-      letter-spacing: 2px;
-      line-height: 63px;
+      letter-spacing: 0.125rem;
+      line-height: 3.9375rem;
     }
     &__title {
       font-size: 1.125rem;
-      line-height: 29px;
+      line-height: 1.8125rem;
     }
     &__text {
-      font-size: 15px;
-      line-height: 31px;
+      font-size: 0.9375rem;
+      line-height: 1.9375rem;
     }
     &__list {
       justify-content: space-between;
@@ -126,14 +124,13 @@
 }
 @media (min-width: 1680px) {
   .how-do {
-    padding-top: 70px;
     margin-bottom: 130px;
     &__title-section {
       font-size: 2.875rem;
     }
     &__title {
       font-size: 1.3125rem;
-      line-height: 29px;
+      line-height: 1.8125rem;
     }
     &__text {
       font-size: 1.1875rem;
