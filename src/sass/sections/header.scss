@@ -45,7 +45,6 @@
   &__burger-menu {
     position: absolute;
     display: block;
-    width: 0;
     top: -135%;
     right: 0;
     transform: translateX(5px);
@@ -53,10 +52,11 @@
     font-size: 0;
     overflow: hidden;
     transition: 0.5s all;
-<<<<<<< HEAD
-    z-index: 98;
-=======
     z-index: 99;
+    background-color: rgba(1, 1, 1, .7);
+    width: 100vw;
+    height: 100vh;
+  }
     &::after {
       content: '';
       background-color: rgba(0, 0, 0, 0.86);
@@ -67,12 +67,10 @@
       height: 500px;
       z-index: -1;
     }
->>>>>>> ebc0b1eb63508a7bec9c33dcf0745df6d1463f0f
-  }
   &__link {
     color: $white;
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 54px;
     display: block;
     font-family: $button-font;
     font-weight: 700;
