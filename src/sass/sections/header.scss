@@ -53,21 +53,7 @@
     font-size: 0;
     overflow: hidden;
     transition: 0.5s all;
-<<<<<<< HEAD
     z-index: 98;
-=======
-    z-index: 99;
-    &::after {
-      content: '';
-      background-color: rgba(0, 0, 0, 0.86);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 500px;
-      z-index: -1;
-    }
->>>>>>> ebc0b1eb63508a7bec9c33dcf0745df6d1463f0f
   }
   &__link {
     color: $white;
