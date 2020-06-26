@@ -10,8 +10,8 @@
   }
   &__title {
     font-size: 1.25rem;
-    letter-spacing: 1px;
-    line-height: 29px;
+    letter-spacing: 0.0625rem;
+    line-height: 1.8125rem;
     color: $last-black;
     font-family: $main-font;
     font-weight: 800;
@@ -22,8 +22,8 @@
   }
   &__text {
     font-size: 0.875rem;
-    letter-spacing: 1px;
-    line-height: 20px;
+    letter-spacing: 0.0625rem;
+    line-height: 1.25rem;
     color: $last-gray;
     font-family: $main-font;
     font-weight: 500;
@@ -44,7 +44,7 @@
     width: max-content;
     &:hover .button {
       background-color: $hover-button;
-      // border: 2px solid $hover-button;
+      @include transition;
     }
   }
   &__benefits-list {
@@ -68,7 +68,7 @@
     }
     &-link {
       font-size: 0.8125rem;
-      line-height: 20px;
+      line-height: 1.25rem;
       color: $last-black;
       font-family: $main-font;
       font-weight: 700;
@@ -106,7 +106,7 @@
     }
     &__title {
       font-size: 1.625rem;
-      line-height: 33px;
+      line-height: 2.0625rem;
       margin-bottom: 30px;
     }
     &__text {
@@ -134,12 +134,12 @@
     }
     &__title {
       font-size: 3rem;
-      line-height: 58px;
+      line-height: 3.625rem;
       margin-bottom: 38px;
     }
     &__text {
       font-size: 1.125rem;
-      line-height: 26px;
+      line-height: 1.625rem;
       margin-bottom: 66px;
     }
     &__text--second-line {
@@ -162,7 +162,7 @@
     }
     &__benefits-list-link {
       font-size: 1.125rem;
-      line-height: 28px;
+      line-height: 1.75rem;
     }
   }
 }
@@ -188,20 +188,20 @@
     }
     &__title {
       font-size: 3.625rem;
-      line-height: 76px;
-      letter-spacing: 2px;
+      line-height: 4.75rem;
+      letter-spacing: 0.125rem;
       margin-bottom: 40px;
     }
     &__text {
       font-size: 1.3125rem;
-      line-height: 33px;
+      line-height: 2.0625rem;
       margin-bottom: 44px;
       width: 90%;
       display: inline-block;
     }
     &__benefits-list-link {
       font-size: 1.3125rem;
-      line-height: 33px;
+      line-height: 2.0625rem;
     }
     &__benefits-list-item {
       width: 422px;

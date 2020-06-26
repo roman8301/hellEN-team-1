@@ -1,7 +1,7 @@
 .how-do {
   padding-top: 0;
+  margin-bottom: 53px;
   &__title-section {
-    text-align: center;
     color: $bg-black;
     padding-bottom: 40px;
   }
@@ -23,15 +23,10 @@
     margin-bottom: 18px;
 
     &::after {
-      display: inline-block;
-      content: '';
-      width: 25px;
-      height: 2px;
-      background-color: $orange;
-      position: absolute;
-      bottom: 0;
+      @include dash;
+      top: 100%;
       left: calc(50% - 12.5px);
-    }
+   }
   }
   &__text {
     font-size: 0.6875rem;
@@ -45,7 +40,6 @@
   &__item {
     min-height: 267px;
     width: 280px;
-    text-align: center;
     margin-bottom: 16px;
     @include transition;
     @include shadow;
@@ -79,16 +73,19 @@
   }
 }
 @media (min-width: 768px) {
-  .how-do__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .how-do__item {
-    width: 290px;
-  }
-  .how-do__item:nth-child(odd) {
-    margin-right: 20px;
+  .how-do {
+    margin-bottom: 50px;
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 290px;
+    }
+    &__item:nth-child(odd) {
+      margin-right: 20px;
+    }
   }
 }
 
