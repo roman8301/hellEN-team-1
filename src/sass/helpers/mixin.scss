@@ -23,7 +23,7 @@
     position: $pos;
     content: $content;
 }
-@mixin transition ($transition: all 0.25s ease 0.2s;) {
+@mixin transition ($transition: all 0.2s ease 0.2s;) {
     transition: $transition;
 }
 @mixin shadow ($box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11)) {
