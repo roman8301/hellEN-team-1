@@ -54,8 +54,8 @@
     overflow: hidden;
     transition: 0.5s all;
     z-index: 99;
-    background-color: rgba(1, 1, 1, .7);
-    width: 100vw;
+    background-color: rgba(1, 1, 1, .7); //добавил background с прозрачностью
+    width: 100vw; //добавил высоту и ширину, чтоб весь вьюпорт закрывал
     height: 100vh;
   }
     &::after {
@@ -139,7 +139,7 @@
   z-index: 100;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { //добавил padding-left ссылкам на мобилке и таблетке
   .header {
     &__link {
       padding-left: 54px;
