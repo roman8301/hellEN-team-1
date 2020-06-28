@@ -1,16 +1,22 @@
 .background-wrapper {
   background-color: $main-black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(../images/feedback-images/group-min.png);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 1px,
+    rgba(0, 0, 0, 0.3) 2px,
+  ), url(../images/feedback-images/group-min.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media (min-resolution: 192dpi) {
   .background-wrapper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/feedback-images/group@2x-min.png);
-  }
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0.2) 1px,
+      rgba(0, 0, 0, 0.3) 2px,
+    ), url(../images/feedback-images/group@2x-min.png);
+ }
 }
 
 .feedback-content {
@@ -100,15 +106,23 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
 
   .background-wrapper {
-    background-image:url(../images/feedback-images/tab-group-min.png); 
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0.2) 1px,
+      rgba(0, 0, 0, 0.3) 2px,
+    ), url(../images/feedback-images/tab-group-min.png); 
   }
 
   @media (min-resolution: 192dpi) {
     .background-wrapper {
-      background-image: url(../images/feedback-images/tab-group@2x-min.png);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        rgba(0, 0, 0, 0.2) 1px,
+        rgba(0, 0, 0, 0.3) 2px,
+      ), url(../images/feedback-images/tab-group@2x-min.png);
     }
   }
 
@@ -151,15 +165,22 @@
   display: block;
 }
 
-@media (min-width: 1280px) and (max-width: 1679px) {
-
+@media (min-width: 1280px) {
   .background-wrapper {
-    background-image:url(../images/feedback-images/des-group-min.png); 
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0.2) 1px,
+      rgba(0, 0, 0, 0.3) 2px,
+    ), url(../images/feedback-images/des-group-min.png); 
   }
 
   @media (min-resolution: 192dpi) {
     .background-wrapper {
-      background-image: url(../images/feedback-images/des-group@2x-min.png);
+      background-image: repeating-linear-gradient(
+        -45deg,
+      rgba(0, 0, 0, 0.2) 1px,
+      rgba(0, 0, 0, 0.3) 2px,
+      ), url(../images/feedback-images/des-group@2x-min.png);
     }
   }
 
@@ -195,14 +216,21 @@
 }
 
 @media (min-width: 1680px) {
-
   .background-wrapper {
-    background-image:url(../images/feedback-images/mega-group-min.png); 
+    background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 1px,
+    rgba(0, 0, 0, 0.3) 2px,
+  ), url(../images/feedback-images/mega-group-min.png); 
   }
 
   @media (min-resolution: 192dpi) {
     .background-wrapper {
-      background-image: url(../images/feedback-images/mega-group@2x-min.png);
+      background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2) 1px,
+    rgba(0, 0, 0, 0.3) 2px,
+  ), url(../images/feedback-images/mega-group@2x-min.png);
     }
   }
 
