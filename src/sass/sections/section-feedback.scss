@@ -1,229 +1,239 @@
 .background-wrapper {
-    background-color: $main-black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/feedback-images/group-min.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: $main-black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../images/feedback-images/group-min.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-resolution: 192dpi) {
-    .background-wrapper {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../images/feedback-images/group@2x-min.png);
-    }
+.background-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../images/feedback-images/group@2x-min.png);
+}
 }
 
 .feedback-content {
-    padding: 3.5rem 0 3.5rem 0;
+  text-align: center;
+  padding: 56px 0 56px 0;
 
-    &__title{
-        display: inline-block;
-        width: 14.625rem;
-        font-weight: 800;
-        font-size: 0.875rem;
-        line-height: 1.625rem;
-        color: $white;
-        margin-bottom: 1.625rem;
+  &__title{
+    font-family: $main-font;
+    font-weight: 800;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    color: $white;
+    margin-bottom: 26px;
+  }
 
-        &--br{
-            display: block;
-        }
-    }
-
-    &__description {
-        font-family: $main-font;
-        font-weight: 600;
-        font-size: 0.6875rem;
-        line-height: 1.2525rem;
-        color: $white;
-        margin-bottom: 1.625rem;
-    }
+  &__description {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 0.6875rem;
+    line-height: 1.2525rem;
+    color: $white;
+    margin-bottom: 26px;
+  }
 }
 
 .contact-form {
+  width: 280px;
+  margin: 0 auto;   
+
+  &__input{
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    color: $white;        
     width: 280px;
-    margin: 0 auto;   
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid $white;
+    background-color: transparent;
+    margin-bottom: 20px;
 
-    &__input{
-        font-family: $main-font;
-        font-weight: 600;
-        font-size: 0.8125rem;
-        color: $white;        
-        width: 280px;
-        height: 50px;
-        padding-left: 20px;
-        border: 1px solid $white;
-        background-color: transparent;
-        margin-bottom: 20px;
-
-        &:nth-child(2n) {
-            margin-bottom: 55px;
-        }
-
-        &::placeholder {
-            color: $white;
-        }
-
-        &:required:focus {
-            outline: none;    
-        }
-        
-        &:required:focus:valid:not(:placeholder-shown) {
-            border-color: green;
-        }
-        
-        &:required:focus:invalid:not(:placeholder-shown) {
-            border-color: red;
-        }
-    }          
-
-    &__button{
-        display: block;
-        width: 250px;
-        height: 50px;
-        border: none;
-        background-color: $orange;
-        text-transform: uppercase;
-        font-family: $button-font;
-        font-size: 0.6875rem;
-        font-weight: 700;
-        color: $white;
-        cursor: pointer;
-        margin: 0 auto;        
+    &:nth-child(2n) {
+      margin-bottom: 55px;
     }
+
+    &::placeholder {
+      color: $white;
+    }
+
+    &:required:focus {
+      outline: none;    
+    }
+        
+    &:required:focus:valid:not(:placeholder-shown) {
+      border-color: green;
+    }
+        
+    &:required:focus:invalid:not(:placeholder-shown) {
+      border-color: red;
+    }
+  }          
+
+  &__button{
+    display: block;
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: $orange;
+    text-transform: uppercase;
+    font-family: $button-font;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: $white;
+    cursor: pointer;
+    margin: 0 auto;        
+    
+    &:hover {
+      background-color: $hover-button;
+      border: $orange;
+      transition: all 0.2s linear;
+    }
+  }
 }
 
 .text-effect {
-    color: $orange;
+  color: $orange;
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
+
+  .background-wrapper {
+    background-image:url(../images/feedback-images/tab-group-min.png); 
+  }
+
+  @media (min-resolution: 192dpi) {
     .background-wrapper {
-        background-image:url(../images/feedback-images/tab-group-min.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+      background-image: url(../images/feedback-images/tab-group@2x-min.png);
     }
+  }
 
-    @media (min-resolution: 192dpi) {
-        .background-wrapper {
-        background-image: url(../images/feedback-images/tab-group@2x-min.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        }
-    }
-
-    .feedback-content {
-        padding: 62px 0 64px 0;
-
-        &__title{
-            width: 548px;
-            font-size: 1.375rem;
-            line-height: 2.3775rem;
-            margin-bottom: 33px;
-        }
-
-        &__description {
-            font-size: 0.9375rem;
-            line-height: 1.25rem;
-            color: $white;
-            margin-bottom: 40px;
-        }
-    }
-
-    .contact-form {
-        width: 400px;
-
-        &__input{
-            font-size: 0.8125rem;                    
-            width: 400px;
-        }
-
-        &:nth-child(2n) {
-            margin-bottom: 30px;
-        }  
-    }
-    .line-effect {
-        display: none;
-    }
-}
-
-.des-line-effect{
-    display: block;
-}
-
-@media (min-width: 1280px) {
-    .background-wrapper {
-        background-image:url(../images/feedback-images/des-group-min.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    @media (min-resolution: 192dpi) {
-        .background-wrapper {
-            background-image: url(../images/feedback-images/des-group@2x-min.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    } 
-
-    .feedback-content {
-        padding: 84px 0 88px 0;
-
-        &__title{
-            font-size: 2.3438rem;
-            line-height: 3.1275rem;
-            margin-bottom: 48px;
-        }
-
-        &__description {
-            font-size: 1.125rem;
-            line-height: 1.5313rem;
-            margin-bottom: 53px;
-        }
-    }
-
-    .contact-form {
-        width: 620px;
-
-        &__input{
-            font-size: 1.3019rem;                    
-            width: 620px;
-            height: 70px;
-        }
-
-        &:nth-child(2n) {
-            margin-bottom: 56px;
-        }
-          
-    }   
-}
-
-@media (min-width: 1680px) {
-    .background-wrapper {
-        background-image:url(../images/feedback-images/mega-group-min.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    @media (min-resolution: 192dpi) {
-        .background-wrapper {
-        background-image: url(../images/feedback-images/mega-group@2x-min.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        }
-    }
-
-    .feedback-content {
-        padding: 126px 0 100px 0;
-    }
+  .feedback-content {
+    padding: 62px 0 64px 0;
 
     &__title{
-        margin-bottom: 64px;
+      font-size: 1.375rem;
+      line-height: 2.3775rem;
+      margin-bottom: 33px;
     }
 
     &__description {
-        font-size: 1.5625rem;
-        line-height: 2.3438rem;
+      font-size: 0.9375rem;
+      line-height: 1.25rem;
+      color: $white;
+      margin-bottom: 40px;
     }
+  }
+
+  .contact-form {
+    width: 400px;
+
+    &__input{
+      font-size: 0.8125rem;                    
+      width: 400px;
+    }
+
+    &:nth-child(2n) {
+     margin-bottom: 30px;
+    }
+  }
+
+  .line-effect {
+    display: none;
+  }
+}
+
+.des-line-effect{
+  display: block;
+}
+
+@media (min-width: 1280px) and (max-width: 1679px) {
+
+  .background-wrapper {
+    background-image:url(../images/feedback-images/des-group-min.png); 
+  }
+
+  @media (min-resolution: 192dpi) {
+
+    .background-wrapper {
+      background-image: url(../images/feedback-images/des-group@2x-min.png);
+    }
+  }
+
+  .feedback-content {
+    padding: 84px 0 88px 0;
+
+    &__title{
+      font-size: 2.3438rem;
+      line-height: 3.1275rem;
+      margin-bottom: 48px;
+    }
+
+    &__description {
+      font-size: 1.125rem;
+      line-height: 1.5313rem;
+      margin-bottom: 53px;
+    }
+  }
+
+  .contact-form {
+    width: 620px;
+
+      &__input{
+      font-size: 1.3019rem;                    
+      width: 620px;
+      height: 70px;
+    }
+
+      &:nth-child(2n) {
+      margin-bottom: 56px;
+    }    
+  }    
+}
+
+@media (min-width: 1680px) {
+
+  .background-wrapper {
+    background-image:url(../images/feedback-images/mega-group-min.png); 
+  }
+
+  @media (min-resolution: 192dpi) {
+    .background-wrapper {
+      background-image: url(../images/feedback-images/mega-group@2x-min.png);
+    }
+  }
+
+  .feedback-content {
+    padding: 126px 0 100px 0;
+    
+    &__title{
+      font-size: 2.3438rem;
+      line-height: 3.1275rem;
+      margin-bottom: 64px;
+    }
+
+    &__description {
+      font-size: 1.5625rem;
+      line-height: 2.3438rem;
+    }
+  }
+
+  .contact-form {
+    width: 620px;
+
+    &__input{
+      font-size: 1.3019rem;                    
+      width: 620px;
+      height: 70px;
+    }
+
+    &:nth-child(2n) {
+      margin-bottom: 56px;
+    }
+      
+  }    
 }
