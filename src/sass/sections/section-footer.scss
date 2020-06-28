@@ -14,10 +14,10 @@
     display: flex;
     justify-content: space-between;
     text-align: center;		
-    background-image: url(../images/footer-images/footer-icon/icon-tel.png);
+    background-image: url(../images/footer-images/icon-tel.png);    
     background-repeat: no-repeat;
     background-position: left ;
-    padding-left: 26px;
+    padding-left: 36px;
     margin-bottom: 20px;
     cursor: pointer;				
   }
@@ -115,6 +115,3 @@
     padding-bottom: 50px;	
   }
 }
-/*
-<img srcset="../images/footer-images/footer-icon/instagram.png 15w, ../images/footer-images/footer-icon/instagram.png 30w"
-                            src="../images/footer-images/footer-icon/instagram.svg" sizes="37px" height="37" alt="instagram" class="inst-img">*/
