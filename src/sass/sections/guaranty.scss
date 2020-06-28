@@ -5,9 +5,9 @@
   &__header {
     margin-bottom: 25px;
     font-family: $main-font;
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.875rem;
     color: $main-black;
     font-weight: 800;
     text-align: center;
@@ -24,9 +24,9 @@
   &__item {
     position: relative;
     padding-left: 40px;
-    font-size: 11px;
-    letter-spacing: 1px;
-    line-height: 20px;
+    font-size: 0.6875rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.25rem;
     color: $last-black;
     font-family: $main-font;
     font-weight: 500;
@@ -63,7 +63,7 @@
     }
 
     &__header {
-      font-size: 26px;
+      font-size: 1.625rem;
     }
 
     &__list {
@@ -82,7 +82,7 @@
     }
 
     &__header {
-      font-size: 42px;
+      font-size: 2.625rem;
       margin-bottom: 40px;
     }
 
@@ -94,9 +94,9 @@
     &__item {
       background-position: -2px 0px;
       background-size: 3%;
-      font-size: 18px;
+      font-size: 1.125rem;
       padding-left: 60px;
-      line-height: 29px;
+      line-height: 1.8125rem;
       &:not(:last-of-type) {
         margin-bottom: 40px;
       }
@@ -112,7 +112,7 @@
 @media (min-width: 1680px) {
   .guaranty {
     &__header {
-      font-size: 46px;
+      font-size: 2.875rem;
       margin-bottom: 50px;
     }
 
@@ -127,7 +127,7 @@
       padding-right: 140px;
     }
     &__item {
-      font-size: 21px;
+      font-size: 1.3125rem;
       background-size: 3%;
       &:not(:last-child)::after {
         left: 13px;
@@ -135,3 +135,4 @@
     }
   }
 }
+
