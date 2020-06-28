@@ -31,8 +31,13 @@
     color: $main-black;   
   }
 
-  &__social-link {		
-    cursor: pointer;				
+  &__social-icon {
+    width: 40px;
+    height: 40px;
+	background-image: url(../images/footer-images/instagram-sketch.png);
+	background-repeat: no-repeat;
+	background-size: cover;		
+    cursor: pointer;			
   }
 }
 
@@ -110,3 +115,6 @@
     padding-bottom: 50px;	
   }
 }
+/*
+<img srcset="../images/footer-images/footer-icon/instagram.png 15w, ../images/footer-images/footer-icon/instagram.png 30w"
+                            src="../images/footer-images/footer-icon/instagram.svg" sizes="37px" height="37" alt="instagram" class="inst-img">*/

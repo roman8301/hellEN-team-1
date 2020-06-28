@@ -89,7 +89,8 @@
     
     &:hover {
       background-color: $hover-button;
-      border: 2px solid  $orange;
+      border: $orange;
+      transition: all 0.2s linear;
     }
   }
 }
@@ -137,7 +138,7 @@
     }
 
     &:nth-child(2n) {
-      margin-bottom: 30px;
+     margin-bottom: 30px;
     }
   }
 
